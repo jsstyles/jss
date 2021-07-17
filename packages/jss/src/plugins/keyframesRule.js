@@ -1,14 +1,15 @@
 // @flow
 import warning from 'tiny-warning'
+/* eslint-disable-next-line import/no-cycle */
 import RuleList from '../RuleList'
 import type {
   CSSKeyframesRule,
   JssStyle,
   RuleOptions,
   ToCssOptions,
-  ContainerRule,
   KeyframesMap,
-  Plugin
+  Plugin,
+  ContainerRule
 } from '../types'
 import escape from '../utils/escape'
 
